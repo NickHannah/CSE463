@@ -1,66 +1,75 @@
 function profile()
 {
-	alert("profile clicked");
+	$('#profile_content').siblings().hide();
+    $('#profile_content').show();
 }
 
 function newsfeed()
 {
-	alert("newsfeed clicked");
+	$('#newsfeed_content').siblings().hide();
+    $('#newsfeed_content').show();
 }
 
 function courses()
 {
-	alert("courses clicked");
+    $('#courses_content').siblings().hide();
+    $('#courses_content').show();
 }
 
 function stats()
 {
-	alert("stats clicked");
+    $('#stats_content').siblings().hide();
+    $('#stats_content').show();
 }
 
 function friends()
 {
-	alert("friends clicked");
+	$('#friends_content').siblings().hide();
+    $('#friends_content').show();
 }
 
 function challenges()
 {
-	alert("challenges clicked");
+	$('#challenges_content').siblings().hide();
+    $('#challenges_content').show();
 }
 
 function achievements()
 {
-	alert("achievements clicked");
+	$('#achievements_content').siblings().hide();
+    $('#achievements_content').show();
 }
 
 function help()
 {
-	alert("help clicked");
+	$('#help_content').siblings().hide();
+    $('#help_content').show();
 }
 
+
 $(document).ready(function() {
-    $('.profile').click(function() {
+    $('#profile').click(function() {
     	profile();
     });
-    $('.newsfeed').click(function() {
+    $('#newsfeed').click(function() {
     	newsfeed();
     });
-    $('.courses').click(function() {
+    $('#courses').click(function() {
     	courses();
     });
-    $('.stats').click(function() {
+    $('#stats').click(function() {
     	stats();
     });
-    $('.friends').click(function() {
+    $('#friends').click(function() {
     	friends();
     });
-    $('.challenges').click(function() {
+    $('#challenges').click(function() {
     	challenges();
     });
-    $('.achievements').click(function() {
+    $('#achievements').click(function() {
     	achievements();
     });
-    $('.help').click(function() {
+    $('#help').click(function() {
     	help();
     });
 });
