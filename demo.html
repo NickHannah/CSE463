@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">You</a>
+              <a href="#You">You</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -46,7 +46,7 @@
         
         <!-- / user icon -->
         <div class="col-md-4"> 
-          <img height="300px" width="350px" src="http://eecari.org/wp-content/uploads/2013/05/img-science.jpg">
+          <img id="profile_pic" height="300px" width="350px" src="http://eecari.org/wp-content/uploads/2013/05/img-science.jpg">
         </div>
 
         <!-- / main user info -->
@@ -56,14 +56,14 @@
           <div class="row">
             <!-- / user name, progress  //////////     COL -->
             <div class="col-md-8">
-              <h2>Demo</h2>
+              <h2 class="name_h2">Demo</h2>
               <p><strong>296,549</strong> pts to level <strong>13</strong></p>
               <div class="progress">
                 <div class="progress-bar" style="width: 40.69%;"></div>
               </div>
             </div>
             <!-- / badge /////////////////////////     COL -->
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
               <img height="100px" width="100px" src="http://fundrive.us/images/badge_everest.png">
             </div>
           </div>
@@ -72,8 +72,8 @@
           <div class="col-md-12">
             <br/><br/><br/><br/>
             <blockquote class="blockquote-reverse">
-              <p>"Let off some steam Bennett."</p>
-              <footer>Arnold Schwarzenegger</footer>
+              <p class="quote">"Let off some steam Bennett."</p>
+              <footer class="quote_author">Arnold Schwarzenegger</footer>
             </blockquote>
           </div>
         </div>
@@ -138,18 +138,18 @@
 
           <!-- PROFILE -->
             <div id="profile_content" class="showme">
-                <!-- profile content -->
+                <!-- NAME -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12"> <!-- LABEL -->
                         <p class="text-muted">Name</p>
                     </div>
-                    <div class="col-md-10">
-                        <h2 id="name_h2">Demo</h2>
+                    <div class="col-md-10"> <!-- PREVIEW -->
+                        <h2 class="name_h2">Demo</h2>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2"> <!-- EDIT BUTTON -->
                         <a id="name_edit" class="btn btn-link editLink" role="button"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-10"> <!-- EDIT FORM -->
                         <form id="name_form" role="form" hidden>
                             <div class="form-group">
                                 <input id="name_input" type="text" class="form-control" placeholder="Your name here!"></input>
@@ -160,19 +160,22 @@
                             </div>
                         </form>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
                 <hr>
+                <!-- BIO -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12"> <!-- LABEL -->
                         <p class="text-muted">Bio</p>
+                        <br/>
                     </div>
-                    <div id="bio_div" class="col-md-10">
-                        <p id="bio_p">This is the about section. Here you can write your bio!</p>
+                    <div id="bio_div" class="col-md-10"> <!-- PREVIEW -->
+                        <p>This is the about section. Here you can write your bio!</p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2"> <!-- EDIT BUTTON -->
                         <a id="bio_edit" class="btn btn-link editLink" role="button"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-10"> <!-- EDIT FORM -->
                         <form id="bio_form" role="form" hidden>
                             <div class="form-group">
                                 <textarea id="bio_text" class="form-control" placeholder="Edit your bio here!"></textarea>
@@ -183,6 +186,36 @@
                             </div>
                         </form>
                     </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <hr>
+                <!-- QUOTE -->
+                <div class="row">
+                    <div class="col-md-12"> <!-- LABEL -->
+                        <p class="text-muted">Quote</p>
+                        <br/>
+                    </div>
+                    <div id="quote_div" class="col-md-10"> <!-- PREVIEW -->
+                        <p class="quote">"Let off some steam Bennett."</p>
+                        <p class="quote_author">Arnold Schwarzenegger</p>
+                    </div>
+                    <div class="col-md-2"> <!-- EDIT BUTTON -->
+                        <a id="quote_edit" class="btn btn-link editLink" role="button"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                    </div>
+                    <div class="col-md-10"> <!-- EDIT FORM -->
+                        <form id="quote_form" role="form" hidden>
+                            <div class="form-group">
+                                <textarea id="quote_text" class="form-control" placeholder="Edit your quote here!"></textarea>
+                                <br/>
+                                <input id="quote_input" type="text" class="form-control" placeholder="Author"></input>
+                            </div>
+                            <div class="form-group">
+                                <button id="quote_cancel" type="button" class="btn btn-danger">Cancel</button>
+                                <button id="quote_submit" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
                 <hr>
             </div>
