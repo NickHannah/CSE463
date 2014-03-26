@@ -18,3 +18,7 @@ footer {
 .sidebar_a:hover {
   cursor: pointer;
 }
+
+.col-md-2 > .editLink  {
+  text-decoration: none;
+}
