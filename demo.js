@@ -85,7 +85,7 @@ function submitBioEdit()
 {
 	var edit = $('#bio_text').val().split("\n");
 	console.log(edit);
-	if (edit.length > 0) {
+	if (edit[0] !== "") {
 		$('#bio_div').empty();
 		for (var i = 0; i < edit.length; i++) {
 			$('#bio_div').append("<p>" + edit[i] + "</p>");
@@ -94,6 +94,7 @@ function submitBioEdit()
 	$('#bio_form').hide();
 }
 
+//----------------------------------------------------------------- QUOTE EDITOR
 function openQuoteEditor()
 {
 	$('#quote_text').val("");
